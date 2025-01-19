@@ -146,7 +146,7 @@ pipeline {
 		  	}
 
 		  	steps {
-				build job: 'DockerCompose', parameters: [string(name: 'COMPOSE', value: 'UP' )], wait: true 
+				build job: 'TopDocker', parameters: [string(name: 'COMPOSE', value: 'UP' )], wait: true 
 		  	}
 		}
 	}
